@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example._2901.Controller3">
+    <children>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                    AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <top>
+                <HBox alignment="CENTER" maxWidth="600.0" prefHeight="50.0" style="-fx-background-color: grey;"
+                      BorderPane.alignment="CENTER">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" minWidth="300.0">
+                            <children>
+                                <Button fx:id="btnReturn" mnemonicParsing="false" prefWidth="60.0" text="Назад">
+                                    <HBox.margin>
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                                    </HBox.margin>
+                                    <font>
+                                        <Font size="11.0"/>
+                                    </font>
+                                </Button>
+                                <Label text="MARATHON SKILLS 2016" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold Italic" size="18.0"/>
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets bottom="10.0" left="20.0" right="10.0" top="10.0"/>
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                            <HBox.margin>
+                                <Insets right="190.0"/>
+                            </HBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" minWidth="80.0">
+                            <children>
+                                <Button fx:id="btnLogout" mnemonicParsing="false" prefWidth="60.0" text="Logout">
+                                    <HBox.margin>
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                                    </HBox.margin>
+                                    <font>
+                                        <Font size="11.0"/>
+                                    </font>
+                                </Button>
+                            </children>
+                        </HBox>
+                    </children>
+                </HBox>
+            </top>
+            <center>
+                <VBox alignment="CENTER" BorderPane.alignment="TOP_CENTER">
+                    <children>
+                        <Label text="Форма авторизации">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="20.0" left="20.0" right="20.0"/>
+                            </VBox.margin>
+                        </Label>
+                        <Label text="Пожалуйста, авторизуйтесь в системе, используя ваш адрес">
+                            <font>
+                                <Font size="11.0"/>
+                            </font>
+                        </Label>
+                        <Label text="электронной почты и пароль.">
+                            <font>
+                                <Font size="11.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="10.0"/>
+                            </VBox.margin>
+                        </Label>
+                        <HBox alignment="CENTER_RIGHT">
+                            <children>
+                                <Label text="Email:">
+                                    <HBox.margin>
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                                    </HBox.margin>
+                                </Label>
+                                <TextField fx:id="etEmail" prefWidth="300.0" promptText="Enter your email address"/>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                            </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT">
+                            <children>
+                                <Label text="Password:">
+                                    <HBox.margin>
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                                    </HBox.margin>
+                                </Label>
+                                <PasswordField fx:id="etPassword" prefWidth="300.0" promptText="Enter your password"/>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                            </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER">
+                            <children>
+                                <Button fx:id="btnLogin" mnemonicParsing="false" prefWidth="60.0" text="Log in">
+                                    <font>
+                                        <Font size="11.0"/>
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                    </HBox.margin>
+                                </Button>
+                                <Button fx:id="btnCancel" mnemonicParsing="false" prefWidth="60.0" text="Cancel">
+                                    <font>
+                                        <Font size="11.0"/>
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                            <VBox.margin>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                            </VBox.margin>
+                        </HBox>
+                    </children>
+                </VBox>
+            </center>
+            <bottom>
+                <HBox alignment="CENTER" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: grey;"
+                      BorderPane.alignment="CENTER">
+                    <children>
+                        <Label text="18 дней 8 часов и 17 минут до старта марафона!" textFill="WHITE">
+                            <font>
+                                <Font size="11.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+            </bottom>
+            <left>
+                <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER"/>
+            </left>
+            <right>
+                <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER"/>
+            </right>
+        </BorderPane>
+    </children>
+</AnchorPane>
